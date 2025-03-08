@@ -19,7 +19,7 @@ import fs from "fs";
             )
 
             //if the file has been uploaded
-            console.log("file has been uploaded successfully on cloudinary", response.url);
+            fs.unlinkSync(localFilePath)
             return response
 
             
