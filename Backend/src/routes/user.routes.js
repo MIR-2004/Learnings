@@ -1,5 +1,5 @@
 import {Router} from "express"
-import { loginUser, logOutUser, refreshAccessToken, registerUser } from "../controllers/user.controller.js"
+import { changeCurrentPassword, loginUser, logOutUser, refreshAccessToken, registerUser } from "../controllers/user.controller.js"
 import  {upload}  from "../middlewares/multe.middleware.js"
 import { verifyJWT } from "../middlewares/auth.middleware.js"
 
@@ -15,7 +15,6 @@ router.route("/register").post(upload.fields(
         maxCount: 1
     }]
 ),registerUser)
-
 
 router.route("/login").post(loginUser)
 
