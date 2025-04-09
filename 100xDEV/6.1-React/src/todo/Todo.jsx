@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 let counter = 4;
 
@@ -10,12 +10,12 @@ const Todo = () => {
         description:"go to gym today"
     },
     {
-        id:1,
+        id:2,
         title: "go to gym",
         description:"go to gym today"
     },
     {
-        id:1,
+        id:3,
         title: "go to gym",
         description:"go to gym today"
     }])
@@ -31,12 +31,12 @@ const Todo = () => {
   return (
     <div>
         <button onClick={addTodo}>add todo</button>
-        {todo.map(val => <Todo key={todo.id} title={todo.title} description={todo.description}/> )}
+        {todo.map(val => <Todos key={val.id} title={todo.title} description={todo.description}/> )}
     </div>
   )
 }
 
-function Todo({title, description}) {
+function Todos({title, description}) {
     return <div>
         <h1>
             {title}

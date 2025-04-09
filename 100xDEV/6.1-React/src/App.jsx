@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import Todo from './todo/todo'
+import Wrapper from './Wrapper/Wrapper'
 
 const App = () => {
 
@@ -11,6 +13,9 @@ const App = () => {
 
   return (
     <div>
+      <div>
+        <Wrapper/>
+      </div>
       <div>
       <button onClick={titlechange}>click me</button>
       <Header title={title}></Header>
