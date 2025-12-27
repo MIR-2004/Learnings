@@ -6,9 +6,5 @@ def black_tea_maker(sugar):
     print("Boiling some more")
     print("puoring in a cup")
     print("Black tea made")
-
-
 black_tea_maker(True)
-black_tea_maker(False)
-
-    
+black_tea_maker(False)   
