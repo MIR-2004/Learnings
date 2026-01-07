@@ -15,3 +15,9 @@ print(marks.values())
 marks.update({"Mir": 7.00})
 
 print(marks.values())
+
+del marks["Nachiketa"]
+print(marks.items())
+
+marks.pop("Mir")
+print(marks.items())
