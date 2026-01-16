@@ -1,9 +1,9 @@
-// interface User{
-//     name: string;
-//     age: number;
-//     email: string;
-//     password: string;
-// }
+interface User {
+   name: string;
+   age: number;
+   email?: string;
+   password?: string;
+}
 
 // type UpdateProp = Pick<User, 'email' | 'password'>
 
@@ -26,12 +26,19 @@
 // }
 
 
- type User = Record<string, number>;
- 
- const user = {
-    "mir" : 56,
-    "amit" : 45
- }
+//  type User = Record<string, number>;
+
+//  const user = {
+//     "mir" : 56,
+//     "amit" : 45
+//  }
+
+const user = new Map<string, User>();
+
+user.set('abc123', { name: 'John Doe', age: 45 });
+user.set('xyz789', { name: 'Bill gates', age: 36 });
+
+
 
 
 
